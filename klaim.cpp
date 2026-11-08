@@ -1,10 +1,4 @@
-#include <iostream>
-#include <string>
-
-#include "data.h"
-#include "klaim.h"
-
-using namespace std;
+#include "header.h"
 
 // Kode jenis laporan
 const int JENIS_HILANG = 1;

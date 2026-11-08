@@ -1,11 +1,4 @@
-#include <iostream>
-#include <string>
-
-#include "data.h"
-#include "pengelolaan.h"
-#include "tampilan.h"
-
-using namespace std;
+#include "header.h"
 
 // Mengubah data laporan
 void editLaporan() {

@@ -1,10 +1,4 @@
-#include <iomanip>
-#include <iostream>
-
-#include "data.h"
-#include "statistik.h"
-
-using namespace std;
+#include "header.h"
 
 void tampilkanStatistik() {
     if(jumlahData == 0) {

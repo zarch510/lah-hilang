@@ -1,9 +1,16 @@
-#ifndef data_h
-#define data_h
+#ifndef header
+#define header
 
+#include <cctype>
+#include <cstdlib>
+#include <iomanip>
+#include <iostream>
+#include <limits>
 #include <string>
+
 using namespace std;
 
+// data
 const int max_data = 100;
 const int jumlah_kategori = 6;
 
@@ -31,4 +38,43 @@ int cariIndexById(int id);
 void hapusData(int index);
 void isiDataAwal();
 
+// tampilan
+string bacaTeks(string label);
+int bacaAngka(string label, int minVal, int maxVal);
+void tekanEnter();
+
+string keHurufKecil(string s);
+
+string jenisKeTeks(int j);
+string statusKeTeks(int s);
+string kategoriKeTeks(int k);
+
+void tampilkanSatuBarang(int indeks);
+void tampilkanSemua();
+
+// Laporan
+void inputBarangHilang();
+void inputBarangTemuan();
+
+// klaim
+void prosesKlaim();
+void verifikasiKlaim();
+void menuKlaim();
+
+// pencarian
+void menuPencarian();
+
+// pencocokan
+void pencocokanOtomatis();
+
+// Pengelolaan
+void editLaporan();
+void hapusLaporan();
+
+// statistik
+void tampilkanStatistik();
+
+// menyimpanData
+void simpanData();
+void muatData();
 #endif

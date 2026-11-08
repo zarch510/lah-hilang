@@ -1,10 +1,4 @@
-#include <cctype>
-#include <iostream>
-#include <limits>
-#include <string>
-
-#include "data.h"
-#include "tampilan.h"
+#include "header.h"
 
 using namespace std;
 

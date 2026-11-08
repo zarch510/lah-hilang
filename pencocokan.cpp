@@ -1,12 +1,4 @@
-
-#include <iostream>
-#include <string>
-
-#include "data.h"
-#include "pencocokan.h"
-#include "tampilan.h"
-
-using namespace std;
+#include "header.h"
 
 void pencocokanOtomatis() {
 

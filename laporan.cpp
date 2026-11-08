@@ -1,10 +1,4 @@
-#include <cctype>
-#include <iostream>
-#include <string>
-
-#include "data.h"
-#include "laporan.h"
-#include "tampilan.h"
+#include "header.h"
 
 using namespace std;
 

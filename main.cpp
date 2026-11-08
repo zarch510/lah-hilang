@@ -1,19 +1,5 @@
+#include "header.h"
 
-#include <cstdlib>
-#include <iostream>
-
-#include "data.h"
-#include "klaim.h"
-#include "laporan.h"
-#include "pencarian.h"
-#include "pencocokan.h"
-#include "pengelolaan.h"
-#include "statistik.h"
-#include "tampilan.h"
-
-using namespace std;
-
-// Membersihkan layar terminal
 void bersihkanLayar() {
 #ifdef _WIN32
     system("cls");
@@ -47,7 +33,8 @@ int main() {
     int pilihan;
 
     // Memasukkan data contoh untuk pengujian
-    isiDataAwal();
+    // isiDataAwal();
+    muatData();
 
     do {
         tampilkanMenu();
@@ -97,6 +84,10 @@ int main() {
             cout << "Menutup aplikasi...\n";
             cout << "Terima kasih telah menggunakan sistem LAH HILANG!\n";
             break;
+        }
+
+        if(pilihan == 1 || pilihan == 2 || pilihan == 6 || pilihan == 7 || pilihan == 8) {
+            simpanData();
         }
 
         // Jeda sebelum kembali ke menu utama

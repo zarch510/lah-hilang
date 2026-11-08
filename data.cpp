@@ -1,5 +1,5 @@
-
-#include "data.h"
+#include "header.h"
+#include <fstream>
 
 int jumlahData = 0;
 int idTerakhir = 0;
@@ -95,4 +95,71 @@ void isiDataAwal() {
 
     tambahData(2, "Charger laptop", 1, "Hitam", "Perpustakaan", "03-11-2026", "Andi", "0833333333",
                "Kabel ada selotip biru");
+}
+
+void simpanData() {
+    ofstream file("riwayatData.txt");
+
+    for(int i = 0; i < jumlahData; i++) {
+        file << idBarang[i] << endl;
+        file << jenis[i] << endl;
+        file << namaBarang[i] << endl;
+        file << kategori[i] << endl;
+        file << warna[i] << endl;
+        file << lokasi[i] << endl;
+        file << tanggal[i] << endl;
+        file << pelapor[i] << endl;
+        file << kontak[i] << endl;
+        file << ciriKhusus[i] << endl;
+        file << status[i] << endl;
+        file << pengklaim[i] << endl;
+    }
+
+    file.close();
+}
+
+void muatData() {
+    ifstream file("riwayatData.txt");
+
+    if(!file.is_open()) {
+        return;
+    }
+
+    jumlahData = 0;
+
+    while(file >> idBarang[jumlahData]) {
+        int i = jumlahData;
+
+        file >> jenis[i];
+        file.ignore();
+
+        getline(file, namaBarang[i]);
+
+        file >> kategori[i];
+        file.ignore();
+
+        getline(file, warna[i]);
+        getline(file, lokasi[i]);
+        getline(file, tanggal[i]);
+        getline(file, pelapor[i]);
+        getline(file, kontak[i]);
+        getline(file, ciriKhusus[i]);
+
+        file >> status[i];
+        file.ignore();
+
+        getline(file, pengklaim[i]);
+
+        if(idBarang[i] > idTerakhir) {
+            idTerakhir = idBarang[i];
+        }
+
+        jumlahData++;
+
+        if(jumlahData >= max_data) {
+            break;
+        }
+    }
+
+    file.close();
 }

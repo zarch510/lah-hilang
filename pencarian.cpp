@@ -1,10 +1,4 @@
-#include "pencarian.h"
-#include "data.h"
-#include "tampilan.h"
-#include <iostream>
-#include <string>
-
-using namespace std;
+#include "header.h"
 
 void menuPencarian() {
     if(jumlahData == 0) {
