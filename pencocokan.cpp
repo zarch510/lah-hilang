@@ -24,6 +24,19 @@ void pencocokanOtomatis() {
     pilihanKategori = bacaAngka("Pilih kategori", 0, jumlah_kategori);
 
     int totalCocok = 0;
+    int totalHilang = 0;
+    int totalTemuan = 0;
+
+    for(int i = 0; i < jumlahData; i++) {
+
+        if(jenis[i] == 1 && status[i] == 0) {
+            totalHilang++;
+        }
+
+        if(jenis[i] == 2 && status[i] == 0) {
+            totalTemuan++;
+        }
+    }
 
     cout << "\n========== HASIL PENCOCOKAN ==========\n";
 

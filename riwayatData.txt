@@ -22,3 +22,63 @@ Ardi
 spakbor belakang rusak
 0
 
+3
+2
+Gitar
+6
+cokelat
+Jl. Rantogau
+03-11-2026
+Reza
+081122334455
+salah satu senarnya putus
+1
+Reza
+5
+2
+motor
+6
+merah
+parkiran kampus
+03-11-2026
+zarch
+08123456789
+stiker merah di body motor
+0
+
+6
+1
+mobil
+6
+hitam
+dekat perempatan untad 1
+03-10-2026
+Zalki
+081122334455
+Stiker JDM Di kaca mobil
+0
+
+7
+1
+Raket
+6
+Merah
+Dekat Polda Sulteng
+03-11-2026
+Zalki
+08123456789
+ujung raket retak
+0
+
+8
+2
+Raket
+6
+Merah
+dekat polda sulteng
+04-11-2026
+Reza
+08123456677
+Ujung Retak
+2
+Zalki

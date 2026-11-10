@@ -27,13 +27,14 @@ int bacaAngka(string label, int minVal, int maxVal) {
         cout << label << " (" << minVal << "-" << maxVal << "): ";
 
         if(cin >> nilai && nilai >= minVal && nilai <= maxVal) {
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            // cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cin.ignore(10000, '\n');
             return nilai;
         }
 
         cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
+        // cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin.ignore(10000, '\n');
         cout << "Input tidak valid, silakan coba lagi.\n";
     }
 }

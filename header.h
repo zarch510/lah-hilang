@@ -1,11 +1,10 @@
 #ifndef header
 #define header
 
-#include <cctype>
-#include <cstdlib>
+#include <cctype>  //tampilan.cpp
+#include <cstdlib> //
 #include <iomanip>
 #include <iostream>
-#include <limits>
 #include <string>
 
 using namespace std;
